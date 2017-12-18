@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <style media="screen">
+            html, body {
+                background: black;
+                position: relative;
+                width: 100vw;
+                height: 100vh;
+            }
+
+            body {
+                /* animation: rotate 10s infinite linear; */
+            }
+
+            @keyframes rotate {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                50% {
+                    transform: rotate(180deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes opacity {
+                0% {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
+
+            @keyframes color {
+                0% {
+                    background: #fff;
+                }
+
+                20% {
+                    background: #fff;
+                }
+
+                25% {
+                    background: #53C4F8;
+                }
+
+                45% {
+                    background: #53C4F8;
+                }
+
+                50% {
+                    background: #FF544E;
+                }
+
+                70% {
+                    background: #FF544E;
+                }
+
+                75% {
+                    background: #3FFD92;
+                }
+
+                95% {
+                    background: #3FFD92;
+                }
+
+                100% {
+                    background: #fff;
+                }
+            }
+
+            .chart {
+              width: 80vh;
+              height: 80vh;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              /* background: #fff; */
+              /* background: radial-gradient(circle closest-side, white, black 90%), conic-gradient(red, #ff8000, yellow, #80ff00, lime, #00ff80, cyan, #0080ff, blue, #8000ff, magenta, #ff0080, red); */
+              /* border: 5px solid #fff; */
+              /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+              background-blend-mode: screen;
+              */
+              border-radius: 50%;
+              animation: opacity 5s infinite, color 40s infinite;
+            }
+
+            @media screen and (orientation: portrait) {
+              .chart {
+                width: 80vh;
+                height: 80vh;
+              }
+            }
+
+        </style>
+    </head>
+    <body>
+    <div class="chart">
+    </div>
+
+    </body>
+</html>
